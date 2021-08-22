@@ -1,0 +1,14 @@
+@import "variables";
+@import "mixins";
+
+.hide-for-mobile {
+    @include breakpoint-up(/* screen-size */) {
+        display: none;
+    }
+}
+
+.hide-for-desktop {
+    @include breakpoint-down(/* screen-size */) {
+        display: none;
+    }
+}
