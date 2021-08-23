@@ -1,0 +1,81 @@
+.hero {
+    position: relative;
+    margin-bottom: 5.333rem;
+    &__image {
+        margin-bottom: 3.111rem;
+    }
+
+    &__showcase {
+        padding: 0 1.333rem;
+
+        h1 {
+            font-size: $mobile-h1;
+            color: #000;
+            font-weight: 800;
+            margin-bottom: 0.833rem;
+        }
+
+        p {
+            line-height: 1.388rem;
+            font-size: $mobile-tablet-txt-size;
+            margin-bottom: 2.222rem;
+        }
+
+        button {
+            font-size: 1rem;
+            color: #FFF;
+            font-weight: 800;
+            background-color: $red;
+            border: none;
+            padding: 1.389em 2.222em;
+        }
+    }
+}
+
+@media screen and (min-width: $tablet-down) {
+    .hero {
+        padding-bottom: 8.3333rem;
+        margin-bottom: unset;
+        background-color: #fff;
+        overflow-y: hidden;
+
+        &__image {
+            position: absolute;
+            z-index: 0;
+            margin-bottom: unset;
+            right: 0;
+            bottom: 0;
+            top: 0;
+        }
+    
+        &__showcase {
+            position: relative;
+            z-index: 1;
+            padding: 4.27778rem 2.166664rem 0 2.166664rem;
+            width: 61.98vw;
+            margin-bottom: unset;
+
+            h1 {
+                font-size: $tablet-h1;
+                color: #000;
+                font-weight: 800;
+                margin-bottom: 0.833rem;
+            }
+    
+            p {
+                line-height: 1.388rem;
+                font-size: $mobile-tablet-txt-size;
+                margin-bottom: 1.777rem;
+            }
+    
+            button {
+                font-size: 1rem;
+                color: #FFF;
+                font-weight: 800;
+                background-color: $red;
+                border: none;
+                padding: 1.389em 2.222em;
+            }
+        }
+    }
+}

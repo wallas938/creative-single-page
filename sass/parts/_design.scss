@@ -1,0 +1,95 @@
+.design {
+    position: relative;
+    background-color: $black;
+    padding-bottom: 4.611111rem;
+
+    &__image {
+        margin-bottom: 4rem;
+        position: relative;
+
+        #logo {
+            position: absolute;
+            bottom: -0.555555rem;
+            left: 1.333rem;
+            width: 3.5rem;
+            height: 1.611111rem;
+        }
+    }
+
+    &__text {
+        color: #FFF;
+        padding: 0 1.333rem;
+
+        h2 {
+            font-size: $mobile-tablet-h2;
+            margin-bottom: 0.750033em;
+            font-weight: 800;
+        }
+
+        h2 span {
+            color: $red;
+        }
+
+        p {
+            font-size: $mobile-tablet-txt-size;
+            line-height: $mobile-tablet-line-height;
+            margin-bottom: 2.22222rem;
+        }
+
+        a {
+            color: $red;
+            font-weight: 800;
+            border-bottom: 2px solid $red;
+            padding-bottom: 0.5rem;
+        }
+    }
+}
+
+@media screen and (min-width: $tablet-down) {
+    .design {
+        display: flex;
+        padding-bottom: unset;
+
+        &__image {
+            margin-bottom: unset;
+            position: relative;
+
+            #logo {
+                position: absolute;
+                bottom: unset;
+                left: 345px;
+                top: 142px;
+                width: 3.5rem;
+                height: 1.611111rem;
+            }
+        }
+
+        &__text {
+            flex: 1;
+            padding: 6.666666rem 2.222222rem 0 3.833333rem;
+
+            h2 {
+                font-size: $mobile-tablet-h2;
+                margin-bottom: 1em;
+                padding-right: 2rem;
+            }
+
+            h2 span {
+                color: $red;
+            }
+
+            p {
+                font-size: $mobile-tablet-txt-size;
+                line-height: $mobile-tablet-line-height;
+                margin-bottom: 2.22222rem;
+            }
+
+            a {
+                color: $red;
+                font-weight: 800;
+                border-bottom: 2px solid $red;
+                padding-bottom: 0.5rem;
+            }
+        }
+    }
+}

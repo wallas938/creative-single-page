@@ -1,1 +1,8 @@
-@import "sass/global";
+@import "sass/utils/global";
+@import "sass/utils/mixins";
+@import "sass/utils/helpers";
+@import "sass/parts/header";
+@import "sass/parts/hero";
+@import "sass/parts/design";
+@import "sass/parts/our-approach";
+@import "sass/parts/guidelines";

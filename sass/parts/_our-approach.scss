@@ -1,0 +1,139 @@
+.our-approach {
+    padding: 5.333333rem 1.333333rem;
+    background-color: $red;
+    color: #FFF;
+
+    h2 {
+        font-size: $mobile-tablet-h2;
+        margin-bottom: 5.166666rem;
+    }
+
+    &__list {
+
+        .approach h3 {
+            font-size: $mobile-tablet-h3;
+            font-weight: 800;
+            margin-bottom: 0.833333rem;
+            position: relative;
+        }
+
+        .approach:first-child h3::before {
+            content: "01";
+            font-size: 4.444444rem;
+            font-weight: 800;
+            mix-blend-mode: normal;
+            opacity: 0.25;
+            position: absolute;
+            top: -2.888888rem;
+            left: -0.89rem;
+        }
+
+        .approach:nth-child(2) h3::before {
+            content: "02";
+            font-size: 4.444444rem;
+            font-weight: 800;
+            mix-blend-mode: normal;
+            opacity: 0.25;
+            position: absolute;
+            top: -2.888888rem;
+            left: -0.89rem;
+        }
+
+        .approach:last-child h3::before {
+            content: "03";
+            font-size: 4.444444rem;
+            font-weight: 800;
+            mix-blend-mode: normal;
+            opacity: 0.25;
+            position: absolute;
+            top: -2.888888rem;
+            left: -0.89rem;
+        }
+
+        .approach:not(:last-child) p {
+            margin-bottom: 4.666666rem;
+        }
+
+        .approach p {
+            font-size: $mobile-tablet-txt-size;
+            line-height: $mobile-tablet-line-height;
+        }
+    }
+}
+
+@media screen and (min-width: $tablet-down) {
+    .our-approach {
+        position: relative;
+        padding: 0 0 23.944444rem 0;
+        background-color: #FFF;
+        display: flex;
+        justify-content: space-between;
+
+        h2 {
+            font-size: $mobile-tablet-h2;
+            margin-bottom: unset;
+            color: #000;
+            padding: 4.03125em 13em 0 1.21875em;
+        }
+
+        &__list {
+            padding: 9.111111rem 2.222222rem 6.666666rem 3.277777rem;
+            position: absolute;
+            z-index: 2;
+            top: -6.388888rem;
+            right: 0;
+            bottom: 0;
+            width: 24.333333rem;
+            background-color: $red;
+
+            .approach h3 {
+                font-size: $mobile-tablet-h3;
+                font-weight: 800;
+                margin-bottom: 0.833333rem;
+                position: relative;
+            }
+
+            .approach:first-child h3::before {
+                content: "01";
+                font-size: 4.444444rem;
+                font-weight: 800;
+                mix-blend-mode: normal;
+                opacity: 0.25;
+                position: absolute;
+                top: -2.888888rem;
+                left: -0.89rem;
+            }
+
+            .approach:nth-child(2) h3::before {
+                content: "02";
+                font-size: 4.444444rem;
+                font-weight: 800;
+                mix-blend-mode: normal;
+                opacity: 0.25;
+                position: absolute;
+                top: -2.888888rem;
+                left: -0.89rem;
+            }
+
+            .approach:last-child h3::before {
+                content: "03";
+                font-size: 4.444444rem;
+                font-weight: 800;
+                mix-blend-mode: normal;
+                opacity: 0.25;
+                position: absolute;
+                top: -2.888888rem;
+                left: -0.89rem;
+            }
+
+            .approach:not(:last-child) p {
+                margin-bottom: 4.666666rem;
+            }
+
+            .approach p {
+                font-size: $mobile-tablet-txt-size;
+                line-height: $mobile-tablet-line-height;
+            }
+        }
+    }
+}

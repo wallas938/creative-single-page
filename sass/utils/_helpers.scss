@@ -2,13 +2,13 @@
 @import "mixins";
 
 .hide-for-mobile {
-    @include breakpoint-up(/* screen-size */) {
+    @include breakpoint-down($tablet-down) {
         display: none;
     }
 }
 
 .hide-for-desktop {
-    @include breakpoint-down(/* screen-size */) {
+    @include breakpoint-up($tablet-up) {
         display: none;
     }
 }

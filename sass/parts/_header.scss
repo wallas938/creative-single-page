@@ -1,0 +1,58 @@
+@import "../utils/variables";
+@import "../utils/colors";
+@import "../utils/typo";
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.22222rem 1.333333rem;
+    img {
+        width: 8.944rem;
+        height: 1.666rem;
+    }
+
+    #mobile-nav img {
+        width: 1.333rem;
+        height: 1rem;
+    }
+}
+
+@media screen and (min-width: $tablet-down) { 
+    header {
+        padding: 0 0 0 2.166664rem;
+        img {
+            width: 8.944rem;
+            height: 1.666rem;
+        }
+    
+        #tablet-and-desktop-nav {
+            background-color: $red;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: clamp(24.333rem, 57.032vw, 30.833rem);
+            padding: 57px 40px 57px 33px;
+            ul {
+                display: flex;
+                flex: 1;
+                justify-content: space-between;
+            }
+
+            ul li {
+                font-size: $mobile-tablet-txt-size;
+                color: #FFF;
+            }
+
+            button {
+                font-weight: 800;
+                background-color: $black;
+                color: #FFF;
+                font-size: 0.888rem;
+                border: none;
+                padding: 1.439em 1.126em;
+                margin-left: 1.555rem;
+            }
+        }
+    }
+}
