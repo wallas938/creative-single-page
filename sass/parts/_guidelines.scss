@@ -1,6 +1,7 @@
 .guidelines {
     &__images {
-        background: linear-gradient(to bottom, transparent 80%, rgba(0, 0, 0, 0.6) 99%),
+        position: relative;
+        /* background: linear-gradient(to bottom, transparent 80%, rgba(0, 0, 0, 0.6) 99%),
                     url(../assets/mobile/image-slide-1.jpg);
         background-repeat: no-repeat;
         background-position: center;
@@ -10,15 +11,28 @@
         padding-bottom: 1.944444rem;
         text-align: right;
         display: flex;
+        flex-direction: column;
         justify-content: flex-end;
-        align-items: flex-end;
+        align-items: flex-end; */
+        height: 22.444444rem; // 404px
 
-        .details > div {
+        img {
+            height: 100%;
+        }
+
+        .details {
+            position: absolute;
+            right: 1.777777rem;
+            text-align: end;
+            bottom: 1.944444rem;
+        }
+
+        .details>div {
             color: #FFF;
             font-size: $mobile-tablet-txt-size;
         }
 
-        .details > div p:first-child{
+        .details>div p:first-child {
             color: #FFF;
             font-weight: 800;
         }
@@ -54,70 +68,100 @@
     .guidelines {
         position: relative;
         display: flex;
+        align-items: flex-end;
         flex-direction: row-reverse;
-        padding-bottom: 3.944444rem;
 
         &__images {
-            padding-right: 2.222222rem;
+            /* padding-right: 2.222222rem;
             padding-bottom: 2.5rem;
-            width: 53.2vw; // 438px
+            width: clamp(24.333333rem, 57.033vw, 40rem); // 438px
+            height: 26.222222rem; */
             height: 26.222222rem;
-
-            .details {
-                color: #FFF;
-                font-size: $mobile-tablet-txt-size;
-            }
     
-            .details p:first-child{
-                color: #FFF;
-                font-weight: 800;
+            .details {
+                position: absolute;
+                right: 2.222222rem; // 40px
+                text-align: end;
+                bottom: 2.5rem; // 45px
             }
         }
-    
+
         &__slide {
             position: absolute;
             top: 0;
             left: 0;
             flex: 1;
-            background-color: $black;
             padding: 5.555555rem 3.888888rem 5.555555rem 2.166666rem;
-            width: 47.027vw; // 390px
+            width: 50.782vw; // 390px
             height: 19.555555rem;
 
             #logo {
                 position: absolute;
                 transform: rotateY(150deg);
-                left: 42.892vw; //329.4px
+                left: 46.892vw;
                 top: 6.944444rem;
                 width: 3.5rem;
                 height: 1.611111rem;
 
                 @media screen and (min-width: 55.555555rem) {
-                    left: 43.892vw;
+                    // 1100
+                    left: 47.892vw;
                 }
 
                 @media screen and (min-width: 71.111111rem) {
-                    left: 44.5vw;
+                    left: 48vw;
                 }
             }
 
             .slide__title {
-                color: #FFF;
-                font-size: $mobile-tablet-h2;
+                margin-bottom: 1.777777rem;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: $desktop) {
+    .guidelines {
+        &__images {
+            height: 40.444444rem;
+            /* padding-right: 2.222222rem;
+            padding-bottom: 2.5rem;
+            width: 62.153vw !important; // 895px
+            height: 40.444444rem; */
+
+            .details {
+                position: absolute;
+                right: 8.555555rem; // 154px
+                text-align: end;
+                bottom: 3.777777rem; // 68px
+            }
+        }
+
+        &__slide {
+            position: absolute;
+            top: 0;
+            left: 0;
+            flex: 1;
+            padding: 8.444444rem 6.944444rem 8.444444rem 9.166666rem !important;
+            width: 51.042vw; // 735px
+            height: 29.333333rem; // 528px
+
+            h2 {
+                font-size: $desktop-h2 !important;
+                margin-bottom: 2.833333rem !important;
+            }
+
+            #logo {
+                position: absolute;
+                transform: rotateY(0deg);
+                left: 47vw !important;
+                top: 6.944444rem;
+                width: 7.5rem;
+                height: 3.388888rem !important;
+            }
+
+            .slide__title {
                 margin-bottom: 1.333333rem;
-            }
-    
-            .slide__controls {
-                display: flex;
-                justify-content: flex-start;
-            }
-    
-            .slide__controls a {
-                width: 2.222222rem;
-            }
-    
-            .slide__controls a:first-child {
-                margin-right: 0.888888rem;
             }
         }
     }

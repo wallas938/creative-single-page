@@ -14,21 +14,54 @@ footer {
         border: none;
         padding: 1.375em 2.812em;
         margin-bottom: 5.555555rem;
+        font-family: 'Commissioner', sans-serif;
     }
 }
 
 @media screen and (min-width: $tablet-down) {
     footer {
-        padding: 0 2.222222rem 5.555555rem 3.166666rem;
+        padding: 3.944444rem 2.222222rem 5.555555rem 3.166666rem;
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        img {
+            display: none;
+        }
 
         h2 {
             font-size: $mobile-tablet-h2;
             margin-bottom: unset;
             font-weight: 800;
             width: 22.111111rem;
+        }
+    
+        button {
+            margin-bottom: unset;
+        }
+    }
+}
+
+@media screen and (min-width: $desktop) {
+    footer {
+        padding: 6.666666rem 9.166666rem 6.388888rem 9.166666rem !important;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        img {
+            display: unset;
+            width: 7.444444rem;
+            height: 3.333333rem;
+            position: absolute;
+            left: -3.722222rem;
+            top: 8.555555rem;
+        }
+
+        h2 {
+            font-size: $desktop-h2;
+            margin-bottom: unset;
+            width: 35.277777rem;
         }
     
         button {

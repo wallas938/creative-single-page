@@ -52,15 +52,11 @@
 
         &__image {
             margin-bottom: unset;
-            position: relative;
 
             #logo {
-                position: absolute;
                 bottom: unset;
                 left: 345px;
                 top: 142px;
-                width: 3.5rem;
-                height: 1.611111rem;
             }
         }
 
@@ -69,26 +65,49 @@
             padding: 6.666666rem 2.222222rem 0 3.833333rem;
 
             h2 {
-                font-size: $mobile-tablet-h2;
                 margin-bottom: 1em;
                 padding-right: 2rem;
             }
+        }
+    }
+}
 
-            h2 span {
-                color: $red;
+@media screen and (min-width: $desktop) {
+    .design {
+        display: flex;
+        padding-bottom: unset;
+        height: 54.666666rem;
+
+        &__image {
+            margin-bottom: unset;
+            width: 40.833333rem;
+
+            #logo {
+                bottom: unset;
+                left: 37.222222rem;
+                top: 13.055555rem;
+                width: 7.5rem;
+                height: 3.388888rem !important;
+            }
+        }
+
+        &__text {
+            flex: 1;
+            padding: 11.1111rem 5.88888rem 0 8.55555rem;
+
+            h2 {
+                margin-bottom: 0.767858em;
+                padding-right: 2rem;
+                font-size: $desktop-h2;
             }
 
             p {
-                font-size: $mobile-tablet-txt-size;
-                line-height: $mobile-tablet-line-height;
-                margin-bottom: 2.22222rem;
+                font-size: 1rem;
+                line-height: $desktop-line-height;
             }
 
             a {
-                color: $red;
-                font-weight: 800;
-                border-bottom: 2px solid $red;
-                padding-bottom: 0.5rem;
+                font-size: 1rem;
             }
         }
     }

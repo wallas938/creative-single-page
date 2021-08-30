@@ -7,9 +7,10 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 2.22222rem 1.333333rem;
+
     img {
         width: 8.944rem;
-        height: 1.666rem;
+        height: 1.666666rem;
     }
 
     #mobile-nav img {
@@ -18,25 +19,26 @@ header {
     }
 }
 
-@media screen and (min-width: $tablet-down) { 
+@media screen and (min-width: $tablet-down) {
     header {
         padding: 0 0 0 2.166664rem;
-        img {
-            width: 8.944rem;
-            height: 1.666rem;
-        }
-    
+
         #tablet-and-desktop-nav {
             background-color: $red;
             display: flex;
             align-items: center;
-            justify-content: space-between;
+            justify-content: flex-start;
             width: clamp(24.333rem, 57.032vw, 30.833rem);
-            padding: 57px 40px 57px 33px;
+            height: 9.888888rem;
+            padding: 3.111111rem 40px 3.111111rem 33px;
+
             ul {
                 display: flex;
                 flex: 1;
-                justify-content: space-between;
+            }
+
+            ul li:not(:last-child) {
+                margin-right: 1.111111rem;
             }
 
             ul li {
@@ -48,11 +50,46 @@ header {
                 font-weight: 800;
                 background-color: $black;
                 color: #FFF;
-                font-size: 0.888rem;
+                font-size: 0.888888rem;
                 border: none;
                 padding: 1.439em 1.126em;
-                margin-left: 1.555rem;
+                margin-left: 1.555555rem;
+                font-family: 'Commissioner', sans-serif;
             }
+        }
+    }
+}
+
+@media screen and (min-width: $desktop) {
+    header {
+        padding-left: 9.166666rem;
+    }
+
+    #tablet-and-desktop-nav {
+        background-color: $red;
+        width: 39.166666rem !important;
+        height: 9.888888rem;
+        padding: 3.111111rem 9.166666rem 3.111111rem 3.833333rem !important;
+
+        ul {
+            justify-content: flex-start !important;
+            flex: 0 !important;
+        }
+
+        ul li:not(:last-child) {
+            margin-right: 1.777777rem !important;
+        }
+
+        ul li {
+            font-size: 0.888888rem !important;
+            color: #FFF;
+        }
+
+        button {
+            font-size: 0.888888rem;
+            padding: 1.439em 2.813em !important;
+            margin-left: 2.666666rem !important;
+            font-family: 'Commissioner', sans-serif;
         }
     }
 }
