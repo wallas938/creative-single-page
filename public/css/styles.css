@@ -52,6 +52,20 @@ select:focus {
   }
 }
 
+.show-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.show-block {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
 /* Layout */
 /* Colors */
 /* FONTS */
@@ -73,9 +87,14 @@ header img {
   height: 1.666666rem;
 }
 
-header #mobile-nav img {
+header .icon--hamburger {
   width: 1.333rem;
   height: 1rem;
+}
+
+header .icon--cross {
+  width: 1.111111rem;
+  height: 1.111111rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -160,6 +179,31 @@ header #mobile-nav img {
 .hero {
   position: relative;
   margin-bottom: 5.333rem;
+}
+
+.hero #mobile-menu {
+  position: absolute;
+  background-color: #191921;
+  top: 0;
+  right: 1.444444rem;
+  padding: 1.777777rem 1.444444rem 1.555555rem 1.444444rem;
+  z-index: 1;
+}
+
+.hero #mobile-menu ul li {
+  color: #FFF;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.hero #mobile-menu button {
+  font-size: 1rem;
+  color: #FFF;
+  font-weight: 800;
+  background-color: #F94F4F;
+  border: none;
+  padding: 1.277777rem 2.444444rem;
+  font-family: 'Commissioner', sans-serif;
 }
 
 .hero__image {
@@ -688,7 +732,7 @@ header #mobile-nav img {
     -webkit-transform: rotateY(0deg);
             transform: rotateY(0deg);
     left: 47vw !important;
-    top: 6.944444rem;
+    top: 10.2rem;
     width: 7.5rem;
     height: 3.388888rem !important;
   }

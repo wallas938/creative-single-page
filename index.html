@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- <base href="http://127.0.0.1:5500/public/">  For DEV-->
+  <!-- <base href="http://127.0.0.1:5500/public/"> -->  <!-- For DEV -->
   <base href="https://wallas938.github.io/creative-single-page/public/">  <!-- For PROD -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,13 +12,15 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
   <link rel="stylesheet" href="css/styles.css">
   <title>Frontend Mentor | Creative single page site</title>
+  <script src="js/mobile-menu.js" defer></script>
+  <script src="js/slider.js" defer></script>
 </head>
 
 <body>
   <header>
     <img src="assets/desktop/logo.svg" alt="">
     <nav id="mobile-nav" class="hide-for-mobile">
-      <img src="assets/mobile/icon-hamburger.svg" alt="">
+      <img src="assets/mobile/icon-hamburger.svg" class="icon--hamburger" alt="">
     </nav>
     <nav id="tablet-and-desktop-nav" class="hide-for-desktop">
       <ul>
@@ -31,6 +33,14 @@
   </header>
 
   <section id="hero" class="hero">
+    <div id="mobile-menu" class="hide">
+      <ul>
+        <li>About</li>
+        <li>Service</li>
+        <li>Projects</li>
+      </ul>
+      <button>Schedule a Call</button>
+    </div>
     <div class="hero__image">
       <picture>
         <source media="(min-width: 1440px)" srcset="assets/desktop/image-hero.jpg">
@@ -123,10 +133,10 @@
       <img src="assets/desktop/bg-pattern-wavy-white.svg" class="hide-for-desktop" alt="wave" id="logo">
       <h2 class="slide__title">Brand naming & guidelines</h2>
       <div class="slide__controls">
-        <a>
+        <a id="btn-prev">
           <img src="assets/desktop/icon-arrow-previous.svg" alt="arrow previous">
         </a>
-        <a>
+        <a id="btn-next">
           <img src="assets/desktop/icon-arrow-next.svg" alt="arrow next">
         </a>
       </div>

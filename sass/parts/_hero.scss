@@ -2,6 +2,29 @@
     position: relative;
     margin-bottom: 5.333rem;
 
+    #mobile-menu {
+        position: absolute;
+        background-color: $black;
+        top: 0;
+        right: 1.444444rem;
+        padding: 1.777777rem 1.444444rem 1.555555rem 1.444444rem;  // 32px 26px 28px 26px
+        z-index: 1;
+        ul li {
+            color: #FFF;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        button {
+            font-size: 1rem;
+            color: #FFF;
+            font-weight: 800;
+            background-color: $red;
+            border: none;
+            padding: 1.277777rem 2.444444rem;
+            font-family: 'Commissioner', sans-serif;
+        }
+    } 
     &__image {
         margin-bottom: 3.111rem;
     }
